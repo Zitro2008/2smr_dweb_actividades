@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #4e8cff;
+    --secondary-color: #f0fff0;
+    --boton_activo: #0047ab;
+    --color-fondo_caja: #eaf6fb;
+    --color-borde-caja: #006699;
+    --color-borde-caja2: #333333;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+header, main, footer {
+        max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #076391;
+    color: white;
+    text-align: center;
+    border-bottom: 8px;
+    border-radius: 0 0 4px 4px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 0.2rem 0.2rem rgb(26, 25, 25);
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.6rem;
+    
+}
+
+nav a:hover{
+    background-color: #ffffff88;
+}
+
+section {
+    background-color: white;
+    box-shadow: 0 2px 4px gray;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+section h2 { 
+    color: #006699;
+    margin-bottom: 0.5rem;
+}
+
+/*Pseusoclases*/
+.btn .btn-sec {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem 0.3rem 0.6rem 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover .btn-sec:hover {
+    background-color: var(--boton_activo);
+}
+input [type="text"]{
+    border: 1px solid #999;
+    padding: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 4px;
+}
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+.lista-demo{
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+}
+.lista-demo li {
+    margin: 0.2rem 0;
+    opacity: 0.8;
+    transition: opacity '0.3s'  
+}
+.lista-demo li:first-child {
+    font-weight: bold;
+    color: var(--boton_activo);
+    opacity: 1;
+}
+.lista-demo li:hover{
+    opacity: 1;
+}
+.caja {
+    background-color: var(--color-fondo_caja);
+    border: 3px solid var(--color-borde-caja);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+}
+#contenedor > span {
+    display: inline-block;
+    background-color: var(--color-fondo_caja);
+    border: 1px solid var(--color-borde-caja);
+    padding: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#contenedor p {
+    background-color: var(--secondary-color);
+    border-left: 4px solid green;
+    padding-left: 0.4rem;
+}
+
+.box {
+    float: left; 
+    width: 100px;
+    height: 80px;
+    border: 3px solid var(--color-borde-caja2);
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.fila::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.b1{ 
+    background-color: #ff9999;
+    border-radius: 16px 0 0;
+}
+.b2 {
+    background-color: #ffcc66;
+    border-top-right-radius: 16px;
+}
+.b3 { 
+    background-color: #99cc99;
+    border-radius: 16px;
+}
+
+footer { 
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 8px 8px 0 0;
+}
