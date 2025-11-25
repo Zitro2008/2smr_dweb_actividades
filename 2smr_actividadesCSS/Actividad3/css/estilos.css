@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{ 
+    --colorfondo: #f3fdbc;
+
+}
+body {
+    background-color: var(--colorfondo);
+    margin: 0 auto;
+}
+
+header {
+    color: blue;
+    font-family:fantasy;
+    font-weight: bold;
+}
+nav { 
+    font-family: 'Times New Roman', Times, serif;
+    background-color:  #fa66aba8;
+    
+}
+nav li { 
+    float: left;
+    padding: 1rem;   
+    text-decoration: none;
+    list-style-type:none;
+    
+}
+nav a {
+    text-decoration: none;
+}
+nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
