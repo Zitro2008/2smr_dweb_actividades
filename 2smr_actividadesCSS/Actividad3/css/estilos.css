@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 :root{ 
     --colorfondo: #f3fdbc;
@@ -7,30 +7,69 @@
 body {
     background-color: var(--colorfondo);
     margin: 0 auto;
+    box-sizing:border-box ; /*LAS PROPIEDADES WIDTH Y HEIGHT INCLUYEN EL BORDE Y EL RELLENO */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header, main, footer {
+    margin: 0 10px;
+    max-width: 90%;
+}
+
+
+header h1 {
+    font-family: "AudioWide";
     color: blue;
-    font-family:fantasy;
     font-weight: bold;
+    text-align: center;
 }
-nav { 
-    font-family: 'Times New Roman', Times, serif;
-    background-color:  #fa66aba8;
-    
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
-nav li { 
-    float: left;
-    padding: 1rem;   
+header nav { 
+    background-color:  #fab4b8;
+     
+}
+header nav ul {
+    padding-left: 20px;   
+}
+header nav li { 
+    float: left;   
     text-decoration: none;
     list-style-type:none;
-    
+    margin-right: 20px;
+    margin-left: 0px;
+    padding: 16px 0 16px 8px;
 }
 nav a {
     text-decoration: none;
+}
+li:hover {
+    background-color: white;
+    
 }
 nav::after {
     content: "";
     display: block;
     clear: both;
+}
+#destacado {
+    border: 3px orange;
+    border-style: dotted;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.caja {
+    border: 2px solid blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.centrado {
+
+    display: flex;
+   
+}
+.izquierda img {
+    float: left;
 }
