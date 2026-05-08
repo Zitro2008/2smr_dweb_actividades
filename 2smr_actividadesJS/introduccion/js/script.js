@@ -15,3 +15,14 @@ if (edad >= 18 && edad < 30)  {
 function saludo() {
     console.log("Hola " + nombre + " de " + edad + " años");
 }
+
+//uso del DOM
+let elementoValida = document.getElementById("valida");
+
+
+let boton = document.getElementById("btnprueba");
+boton.addEventListener("click", function() {
+    elementoValida.textContent = "Valor modificado";
+    console.log("Modificando el texto del párrafo");
+    alert("Has pulsado el botón y se ha modificado el texto del párrafo");
+});
