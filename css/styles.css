@@ -19,7 +19,9 @@ p {
     margin-top: 10px;
 }
 
-
+/* ===============================
+   CABECERA
+================================== */
 
 header {
     background-color: rgb(248, 88, 88);
@@ -35,20 +37,25 @@ header img {
     margin: 10px auto 0 auto;
     border-radius: 10px;
 }
+
+/* ===============================
+   CONTENEDOR DE ACTIVIDADES
+================================== */
+
 .contenedor-actividades {
     display: flex;
     justify-content: space-between;  
-    gap: 40px;                       
+    gap: 20px; /* Reducido un poco para dar espacio a la 3ª columna */
     margin: 30px auto;
-    width: 85%;
+    width: 90%; /* Aumentado ligeramente para aprovechar el espacio */
 }
-
 
 .contenedor-actividades section {
     background: white;
     padding: 20px;
     border-radius: 12px;
-    width: 45%;
+    /* Ajustado a 30% para que quepan las 3 secciones (HTML, CSS, JS) */
+    width: 30%; 
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -61,6 +68,9 @@ header img {
     margin: 8px 0;
 }
 
+/* ===============================
+   ENLACES Y FOOTER
+================================== */
 
 .enla {
     text-decoration: none ;
@@ -72,11 +82,19 @@ header img {
     color: rgb(255, 0, 0);
     text-decoration: underline rgb(247, 108, 108);
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
 .repo {
     text-decoration: none ;
     color: rgb(248, 88, 88);
-    font-weight:bold;
-    }
+    font-weight: bold;
+}
+
 .repo:hover {
     color: rgb(240, 200, 100);
 }
